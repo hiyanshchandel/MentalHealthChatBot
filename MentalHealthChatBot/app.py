@@ -8,7 +8,7 @@ from langchain_community.chat_message_histories import ChatMessageHistory
 from langchain_core.runnables import RunnableWithMessageHistory
 from langchain_core.chat_history import BaseChatMessageHistory
 from langchain_core.messages import HumanMessage, SystemMessage
-api_key = os.getenv('GROQ_API_KEY')
+api_key = st.secrets["api_key"]
 load_dotenv()
 st.title("Mental Health Chatbot")
 llm = ChatGroq(api_key=api_key, model = "llama-3.3-70b-versatile")
