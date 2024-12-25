@@ -12,7 +12,7 @@ from openai import OpenAI
 api_key = st.secrets["api_key"]
 openai_api_key = st.secrets["openai_api_key"]
 OpenAI.api_key = openai_api_key
-client = OpenAI()
+client = OpenAI(api_key=openai_api_key)
 speech_file_path = "speech.mp3"
 load_dotenv()
 st.title("Mental Health Chatbot")
