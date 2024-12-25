@@ -20,4 +20,3 @@ streamlit
 langchain-chroma
 openai
 pathlib
-base64
