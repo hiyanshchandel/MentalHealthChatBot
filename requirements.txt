@@ -18,3 +18,6 @@ sse_starlette
 transformers
 streamlit
 langchain-chroma
+openai
+pathlib
+base64
