@@ -58,5 +58,5 @@ if user_input_id:
         )
         response_audio.stream_to_file(speech_file_path)
         st.write("assistant", response) 
-        st.audio(speech_file_path,format="audio/mpeg", loop=True)
+        st.audio(speech_file_path,format="audio/mpeg", loop=False)
         
