@@ -11,9 +11,9 @@ from langchain_core.messages import HumanMessage, SystemMessage
 from openai import OpenAI
 import base64
 api_key = st.secrets["api_key"]
-openai_api_key = os.getenv('OPENAI_KEY_KEY')
+openai_api_key = st.secrets["openai_api_key"]
 OpenAI.api_key = openai_api_key
-client = OpenAI()
+client = OpenAI(api_key=openai_api_key)
 speech_file_path = "speech.mp3"
 load_dotenv()
 st.title("Mental Health Chatbot")
