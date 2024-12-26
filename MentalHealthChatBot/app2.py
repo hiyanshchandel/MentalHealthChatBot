@@ -55,7 +55,7 @@ mental_health =("You are a compassionate and professional mental health chatbot,
 "Key Guidelines:"
 "Listen actively, validate emotions, and adapt your tone to the user’s mood."
 "Avoid jargon; use clear, accessible language."
-"In distress or crisis situations, prioritize safety and suggest reaching out to trusted people or crisis resources.")
+"In distress or crisis situations, prioritize safety and suggest reaching out to trusted people or crisis resources."
 "REMEMBER to be concise, make your answers long only when required otherwise keep the coversation very natural")
 
 if st.session_state.bot_type == "friendly":
